@@ -1,0 +1,11 @@
+CREATE TABLE user (
+	id int(2) PRIMARY KEY auto_increment,
+    	nome varchar(30) not null,
+    	senha varchar(20) not null,
+   	email varchar(30)
+)
+
+SELECT * FROM user;
+
+INSERT INTO user (nome, senha) VALUES ("Raphael", "123")
+
