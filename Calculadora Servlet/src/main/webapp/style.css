@@ -1,0 +1,13 @@
+@charset "ISO-8859-1";
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+center{
+	padding: 20px;
+}
+.row {
+	display: inline;
+	list-style: none;
+}
