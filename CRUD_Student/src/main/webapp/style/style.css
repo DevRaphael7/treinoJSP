@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+
+* {
+	box-sizing: border-box;
+}
+table {
+	width: 400px;
+}
+
+table th, caption {
+	text-align: left; /* Alinhar texto da tabela. */
+}
+
+table, th, td { /* Esta estilização vai criar bordas na tabela do HTML */
+	padding: 10px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}

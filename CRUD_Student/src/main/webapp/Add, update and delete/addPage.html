@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Insert title here</title>
+	</head>
+<body>
+	<center><h1>Página de INSERT</h1></center>
+	
+	<form action="addSubmit.jsp" method="GET">
+		<center>
+		<div>
+			<label>Nome: </label>
+			<input type="text" name="txtNome" id="nome">
+		</div>
+		<br>
+		<div>
+			<label>RA: </label>
+			<input type="text" name="txtRa" id="ra">
+		</div>
+		<br>
+		<input type="submit" name="btn" value="adicionar" onclick="return teste()">
+		</center>
+	</form>
+	<script>
+		var nome = document.getElementById("nome");
+		var ra = document.getElementById("ra");
+		
+		function teste () { 
+			if (nome.value == "" || ra.value == ""){
+				alert("Nome e/ou RA vazios!");	
+			}
+		}
+	</script>
+</body>
+</html>

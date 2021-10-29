@@ -32,10 +32,10 @@ public class CalculadoraServlet extends HttpServlet{
 		
 		Calculadora calc = new Calculadora(operacao, numero1, numero2);
 		
-		if ( calc.calcular().equals("Ocorreu um erro!") ) {
+		if ( calc.calcular().contains("Ocorreu um erro!") ) {
 			out.println("<h1>Ocorreu um erro na conversão dos números!</h1>");
 			return;
-		} else if ( calc.calcular().equals("\"Nenhuma das opções foi escolhidas\"") ) {
+		} else if ( calc.calcular().contains("\"Nenhuma das opções foi escolhidas\"") ) {
 			out.println("<h1>Nenhuma operação aritmética foi escolhida</h1>");
 			return;
 		}
